@@ -40,6 +40,7 @@ public class EnemyBehavior : MonoBehaviour
         {
             HealthBar.GetComponent<HealthBar>().TakeDamage();
             Destroy(this.gameObject);
+
         }
     }
 }
