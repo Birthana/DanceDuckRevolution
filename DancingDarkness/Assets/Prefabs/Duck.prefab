@@ -94,3 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eb584d23369c8a4fb94fdcd3dbe6c6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  ducks:
+  - {fileID: -6080852321328123255, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
+  - {fileID: -7512077103473583327, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
