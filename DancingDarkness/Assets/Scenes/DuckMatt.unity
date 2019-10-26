@@ -187,6 +187,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4767333881264016089, guid: e19c570eeb5d34d4e87d03189809529f,
+        type: 3}
+      propertyPath: ducks.Array.data[0]
+      value: 
+      objectReference: {fileID: -6080852321328123255, guid: 3e664109359070d4ea1f4285a89e66db,
+        type: 3}
+    - target: {fileID: 4767333881264016089, guid: e19c570eeb5d34d4e87d03189809529f,
+        type: 3}
+      propertyPath: ducks.Array.data[1]
+      value: 
+      objectReference: {fileID: -7512077103473583327, guid: 3e664109359070d4ea1f4285a89e66db,
+        type: 3}
+    - target: {fileID: 4767333881264016089, guid: e19c570eeb5d34d4e87d03189809529f,
+        type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e19c570eeb5d34d4e87d03189809529f, type: 3}
 --- !u!1 &516818771
