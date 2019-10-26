@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
     //spawn
     //fall
     //deal damage
-    float SpawnHeight = 1.5f;
+    float SpawnHeight = 3.5f;
     float[] position = new float[3];
     public GameObject enemy;
 

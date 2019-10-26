@@ -8,10 +8,8 @@ public class EnemyBehavior : MonoBehaviour
 
     // Start is called before the first frame update
     // Update is called once per frame
-    Vector3 position;
     private void Start()
     {
-        position = this.transform.position;
         HealthBar = GameObject.Find("Bar");
         Move();
     }
@@ -23,25 +21,25 @@ public class EnemyBehavior : MonoBehaviour
 
     public void Move()
     {
-        while (true)
-        {
-            StartCoroutine("EnemyMovement");
-        }
+        StartCoroutine("EnemyMovement");
     }
 
     IEnumerator EnemyMovement()
     {
-        position = position - new Vector3(0, 1, 0);
-        this.DamageCheck();
-        yield return new WaitForSeconds(1); 
+        for (int i = 0; i < 6; i++)
+        {
+            this.GetComponent<Transform>().position -= new Vector3(0, 1, 0);
+            DamageCheck();
+            yield return new WaitForSeconds(1);
+        }
     }
 
     void DamageCheck()
     {
-        if(position.y < -2)
+        if(this.GetComponent<Transform>().position.y < -2.0f)
         {
             HealthBar.GetComponent<HealthBar>().TakeDamage();
-            Destroy(this);
+            Destroy(this.gameObject);
         }
 
     }
