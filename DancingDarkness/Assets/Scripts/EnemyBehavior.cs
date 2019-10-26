@@ -9,6 +9,7 @@ public class EnemyBehavior : MonoBehaviour
     // Start is called before the first frame update
     // Update is called once per frame
     Vector3 position;
+    bool alive;
 
     private void Start()
     {
@@ -25,7 +26,7 @@ public class EnemyBehavior : MonoBehaviour
 
     public void Move()
     {
-        while ()
+        while (alive)
         {
             StartCoroutine("EnemyMovement");
         }
@@ -41,8 +42,9 @@ public class EnemyBehavior : MonoBehaviour
     void DamageCheck()
     {
         if(position.y < -2)
-        {
+        {   
             HealthBar.GetComponent<HealthBar>().TakeDamage();
+            alive = false;
             Destroy(this);
         }
 
