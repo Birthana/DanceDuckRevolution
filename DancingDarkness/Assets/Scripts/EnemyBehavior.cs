@@ -9,10 +9,12 @@ public class EnemyBehavior : MonoBehaviour
     // Start is called before the first frame update
     // Update is called once per frame
     Vector3 position;
+
     private void Start()
     {
         position = this.transform.position;
         HealthBar = GameObject.Find("Bar");
+        alive = true;
         Move();
     }
 
@@ -23,7 +25,7 @@ public class EnemyBehavior : MonoBehaviour
 
     public void Move()
     {
-        while (true)
+        while ()
         {
             StartCoroutine("EnemyMovement");
         }
