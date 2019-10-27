@@ -6,6 +6,7 @@ public class EnemyBehavior : MonoBehaviour
 {
     public GameObject HealthBar;
     public bool moving;
+    public Sprite romance;
 
     // Start is called before the first frame update
     // Update is called once per frame
@@ -30,20 +31,23 @@ public class EnemyBehavior : MonoBehaviour
                 this.GetComponent<Transform>().position -= new Vector3(0, 1, 0);
                 if (this.GetComponent<Transform>().position.y < -2.0f)
                 {
-                    HealthBar.GetComponent<HealthBar>().TakeDamage();
-                    this.GetComponent<Animator>().SetBool("IsDead", true);
-                    this.GetComponent<BoxCollider2D>().enabled = false;
-                    moving = false;
-                    yield return new WaitForSeconds(0.3f);
-                    Destroy(this.gameObject);
+                    if (this.GetComponent<SpriteRenderer>().sprite.Equals(romance))
+                    {
+                        HealthBar.GetComponent<HealthBar>().GainHealth();
+                        Destroy(this.gameObject);
+                    }
+                    else
+                    {
+                        HealthBar.GetComponent<HealthBar>().TakeDamage();
+                        this.GetComponent<Animator>().SetBool("IsDead", true);
+                        this.GetComponent<BoxCollider2D>().enabled = false;
+                        moving = false;
+                        yield return new WaitForSeconds(0.3f);
+                        Destroy(this.gameObject);
+                    }
                 }
                 yield return new WaitForSeconds(1);
             }
         }
-    }
-
-    void DamageCheck()
-    {
-        
     }
 }
