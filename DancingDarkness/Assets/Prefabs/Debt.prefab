@@ -123,6 +123,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthBar: {fileID: 0}
+  moving: 0
+  romance: {fileID: -8809840550984906522, guid: 86cab2873913a9f4ebe8fe8c41a5fcf5,
+    type: 3}
 --- !u!95 &6778248590987322230
 Animator:
   serializedVersion: 3

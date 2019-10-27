@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -19,6 +20,14 @@ public class EnemySpawner : MonoBehaviour
         Spawn();
     }
 
+    private void Update()
+    {
+        if (counter == 100)
+        {
+            SceneManager.LoadScene(3);
+        }
+    }
+
     public void Spawn()
     {
         StartCoroutine("Spawning");
@@ -26,7 +35,7 @@ public class EnemySpawner : MonoBehaviour
     }
 
     IEnumerator Spawning() {
-        while( counter < 10) {
+        while( counter < 100) {
             position[0] = Random.Range(1, 4) - 2.5f;
             position[1] = SpawnHeight;
             position[2] = 0;
