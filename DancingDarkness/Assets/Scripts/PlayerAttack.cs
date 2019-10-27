@@ -19,6 +19,8 @@ public class PlayerAttack : MonoBehaviour
     int index;
     KeyCode attackKey;
 
+    public AudioSource audioAttack;
+
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +54,7 @@ public class PlayerAttack : MonoBehaviour
         GameObject attack = Instantiate(projectile, this.GetComponent<Transform>().position, Quaternion.identity);
         sprite.sprite = dance[index];
         attack.GetComponent<SpriteRenderer>().sprite = dance[index];
+        audioAttack.Play();
         yield return new WaitForSeconds(2);
         cooldown = false;
     }

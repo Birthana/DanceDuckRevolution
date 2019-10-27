@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public SpriteRenderer sprite;
     public Sprite[] ducks = new Sprite[2];
+    public AudioSource audioMove;
 
     // Start is called before the first frame update
     void Start()
@@ -22,11 +23,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 transform.position = new Vector2(-1.5f, -2.5f);
                 sprite.sprite = ducks[1];
+                audioMove.Play();
             }
             else if(Input.GetKeyDown(KeyCode.RightArrow))
             {
                 transform.position = new Vector2(0.5f, -2.5f);
                 sprite.sprite = ducks[1];
+                audioMove.Play();
             }
         }
         else if(transform.position.x == -1.5)
@@ -39,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 transform.position = new Vector2(-0.5f, -2.5f);
                 sprite.sprite = ducks[0];
+                audioMove.Play();
             }
         }
         else if(transform.position.x == 0.5)
@@ -47,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 transform.position = new Vector2(-0.5f, -2.5f);
                 sprite.sprite = ducks[0];
+                audioMove.Play();
             }
             else if(Input.GetKeyDown(KeyCode.RightArrow))
             {
