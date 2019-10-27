@@ -13,24 +13,31 @@ public class PlayerAttack : MonoBehaviour
     public bool cooldown = false;
 
     public GameObject attackText;
-    private string[] attackKey = { "Q", "W", "E", "R", "A", "S", "D", "F" };
-    public string presentAttack;
+    string[] text = { "Q", "W", "E", "R", "A", "S", "D", "F" };
+    KeyCode[] keyCodes = { KeyCode.Q, KeyCode.W, KeyCode.E, KeyCode.R,
+                                   KeyCode.A, KeyCode.S, KeyCode.D, KeyCode.F };
+    int index;
+    KeyCode attackKey;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        presentAttack = attackKey[Random.Range(0, 8)];
-        attackText.GetComponent<Text>().text = presentAttack;
+        index = Random.Range(0, 8);
+        attackText.GetComponent<Text>().text = text[index];
+        attackKey = keyCodes[index];
         sprite = this.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !cooldown)
+        if (Input.GetKeyDown(attackKey) && !cooldown)
         {
             Attack();
+            index = Random.Range(0, 8);
+            attackText.GetComponent<Text>().text = text[index];
+            attackKey = keyCodes[index];
             cooldown = true;
         }
     }
@@ -43,7 +50,8 @@ public class PlayerAttack : MonoBehaviour
     IEnumerator Cooldown()
     {
         GameObject attack = Instantiate(projectile, this.GetComponent<Transform>().position, Quaternion.identity);
-        attack.GetComponent<SpriteRenderer>().sprite = dance[0];
+        sprite.sprite = dance[index];
+        attack.GetComponent<SpriteRenderer>().sprite = dance[index];
         yield return new WaitForSeconds(2);
         cooldown = false;
     }

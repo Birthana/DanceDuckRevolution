@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &9110045730677694611
+--- !u!1 &4846518957151777174
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7340836457342037771}
-  - component: {fileID: 5184031166277345204}
-  - component: {fileID: 4767333881264016089}
-  - component: {fileID: 2217640441462810286}
+  - component: {fileID: 4846518957151777179}
+  - component: {fileID: 4846518957151777176}
+  - component: {fileID: 4846518957151777177}
+  - component: {fileID: -6090508603944955754}
+  - component: {fileID: -4446963728239685898}
   m_Layer: 0
-  m_Name: Duck
+  m_Name: Seer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7340836457342037771
+--- !u!4 &4846518957151777179
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9110045730677694611}
+  m_GameObject: {fileID: 4846518957151777174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -2.5, z: 0}
+  m_LocalPosition: {x: -0.03653871, y: -0.14045428, z: -6.214224}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5184031166277345204
+--- !u!212 &4846518957151777176
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9110045730677694611}
+  m_GameObject: {fileID: 4846518957151777174}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -71,57 +72,73 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -6080852321328123255, guid: 3e664109359070d4ea1f4285a89e66db,
+  m_Sprite: {fileID: -3782772298885701947, guid: d161c3cc6ef1a9341b4baa4e347b1105,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4767333881264016089
+--- !u!95 &4846518957151777177
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4846518957151777174}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8319c6bc111eda643b77423dbcbc1233, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-6090508603944955754
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9110045730677694611}
+  m_GameObject: {fileID: 4846518957151777174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8eb584d23369c8a4fb94fdcd3dbe6c6e, type: 3}
+  m_Script: {fileID: 11500000, guid: c2f2d49d5252a99438f9542a9072f76d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  ducks:
-  - {fileID: -6080852321328123255, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
-  - {fileID: -7512077103473583327, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
---- !u!114 &2217640441462810286
-MonoBehaviour:
+  HealthBar: {fileID: 0}
+--- !u!61 &-4446963728239685898
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9110045730677694611}
+  m_GameObject: {fileID: 4846518957151777174}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f94224c4230bc940806d3c5a2468952, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  dance:
-  - {fileID: 3050298286803795759, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
-  - {fileID: -674736056058281519, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
-  - {fileID: -3368953627031118685, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
-  - {fileID: 5139781249537194122, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
-  - {fileID: 995683507652777763, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
-  - {fileID: 748963542221421682, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
-  - {fileID: -8415451842214196470, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
-  - {fileID: 1685854417857536512, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
-  projectile: {fileID: 6332805609431186862, guid: f6c8d2a1dc4353d4a81fe561ecd36284,
-    type: 3}
-  cooldown: 0
-  attackText: {fileID: 0}
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

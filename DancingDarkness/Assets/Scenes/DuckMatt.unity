@@ -189,59 +189,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2217640441462810286, guid: e19c570eeb5d34d4e87d03189809529f,
         type: 3}
-      propertyPath: attackKey.Array.size
-      value: 26
-      objectReference: {fileID: 0}
-    - target: {fileID: 2217640441462810286, guid: e19c570eeb5d34d4e87d03189809529f,
-        type: 3}
-      propertyPath: dance.Array.data[0]
-      value: 
-      objectReference: {fileID: 3050298286803795759, guid: 3e664109359070d4ea1f4285a89e66db,
-        type: 3}
-    - target: {fileID: 2217640441462810286, guid: e19c570eeb5d34d4e87d03189809529f,
-        type: 3}
-      propertyPath: dance.Array.data[1]
-      value: 
-      objectReference: {fileID: -674736056058281519, guid: 3e664109359070d4ea1f4285a89e66db,
-        type: 3}
-    - target: {fileID: 2217640441462810286, guid: e19c570eeb5d34d4e87d03189809529f,
-        type: 3}
-      propertyPath: dance.Array.data[2]
-      value: 
-      objectReference: {fileID: -3368953627031118685, guid: 3e664109359070d4ea1f4285a89e66db,
-        type: 3}
-    - target: {fileID: 2217640441462810286, guid: e19c570eeb5d34d4e87d03189809529f,
-        type: 3}
-      propertyPath: dance.Array.data[3]
-      value: 
-      objectReference: {fileID: 5139781249537194122, guid: 3e664109359070d4ea1f4285a89e66db,
-        type: 3}
-    - target: {fileID: 2217640441462810286, guid: e19c570eeb5d34d4e87d03189809529f,
-        type: 3}
-      propertyPath: dance.Array.data[4]
-      value: 
-      objectReference: {fileID: 995683507652777763, guid: 3e664109359070d4ea1f4285a89e66db,
-        type: 3}
-    - target: {fileID: 2217640441462810286, guid: e19c570eeb5d34d4e87d03189809529f,
-        type: 3}
-      propertyPath: dance.Array.data[5]
-      value: 
-      objectReference: {fileID: 748963542221421682, guid: 3e664109359070d4ea1f4285a89e66db,
-        type: 3}
-    - target: {fileID: 2217640441462810286, guid: e19c570eeb5d34d4e87d03189809529f,
-        type: 3}
-      propertyPath: dance.Array.data[6]
-      value: 
-      objectReference: {fileID: -8415451842214196470, guid: 3e664109359070d4ea1f4285a89e66db,
-        type: 3}
-    - target: {fileID: 2217640441462810286, guid: e19c570eeb5d34d4e87d03189809529f,
-        type: 3}
-      propertyPath: dance.Array.data[7]
-      value: 
-      objectReference: {fileID: 1685854417857536512, guid: 3e664109359070d4ea1f4285a89e66db,
-        type: 3}
-    - target: {fileID: 2217640441462810286, guid: e19c570eeb5d34d4e87d03189809529f,
-        type: 3}
       propertyPath: attackText
       value: 
       objectReference: {fileID: 1951441054}
