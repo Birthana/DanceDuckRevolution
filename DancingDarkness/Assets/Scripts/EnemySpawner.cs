@@ -8,11 +8,10 @@ public class EnemySpawner : MonoBehaviour
     //spawn
     //fall
     //deal damage
-    public Sprite[] images;
+    public GameObject[] EnemyType;
 
     float SpawnHeight = 3.5f;
     float[] position = new float[3];
-    public GameObject enemy;
     int counter = 0;
     
     private void Start()
@@ -31,11 +30,12 @@ public class EnemySpawner : MonoBehaviour
             position[0] = Random.Range(1, 4) - 2.5f;
             position[1] = SpawnHeight;
             position[2] = 0;
-            //check tags instead of class?
-            GameObject tempEnemy = Instantiate(enemy, new Vector3(position[0], position[1], position[2]), Quaternion.identity);
             int EnemyVariant = Random.Range(0, 4);
+            //check tags instead of class?
+            GameObject tempEnemy = Instantiate(EnemyType[EnemyVariant], new Vector3(position[0], position[1], position[2]), Quaternion.identity);
+            
             //returns game object. = a variable that is the game object. use that game object variable to change 
-            tempEnemy.GetComponent<SpriteRenderer>().sprite = images[EnemyVariant];
+            //tempEnemy.GetComponent<SpriteRenderer>().sprite = images[EnemyVariant];
             counter++;
             yield return new WaitForSeconds(2);
         }
