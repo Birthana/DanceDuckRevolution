@@ -1121,11 +1121,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4767333881264016089, guid: e19c570eeb5d34d4e87d03189809529f,
-        type: 3}
-      propertyPath: audioMove
-      value: 
-      objectReference: {fileID: 969662845}
     - target: {fileID: 2217640441462810286, guid: e19c570eeb5d34d4e87d03189809529f,
         type: 3}
       propertyPath: projectile
@@ -1142,6 +1137,11 @@ PrefabInstance:
       propertyPath: audioAttack
       value: 
       objectReference: {fileID: 1534542538}
+    - target: {fileID: 4767333881264016089, guid: e19c570eeb5d34d4e87d03189809529f,
+        type: 3}
+      propertyPath: audioMove
+      value: 
+      objectReference: {fileID: 969662845}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e19c570eeb5d34d4e87d03189809529f, type: 3}
 --- !u!1 &1126397930

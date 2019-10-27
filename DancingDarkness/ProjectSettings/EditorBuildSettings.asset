@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: a22799186c01f5345bdada6df5b9461a
+  - enabled: 1
+    path: Assets/Scenes/DuckBen.unity
+    guid: 68d7d194aee543c4b8c19ceeace3f891
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 749da6f296603d647a9ad63e08eef32c
   m_configObjects: {}
