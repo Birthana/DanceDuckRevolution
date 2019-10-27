@@ -6,14 +6,20 @@ public class ProjectileCollider: MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Before if statement");
-        if(collision.collider.tag == "Enemy")
-        {
-            Debug.Log("Inside if statement");
-            Destroy(collision.gameObject);
-            Destroy(this.gameObject);
-        }
-        Debug.Log("After if statement");
+        StartCoroutine(Death(collision));
     }
-        
+
+    IEnumerator Death(Collision2D collision)
+    {
+            if (collision.collider.tag == "Enemy")
+            {
+                Destroy(this.gameObject);
+                collision.gameObject.GetComponent<Animator>().SetBool("IsDead", true);
+                collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                collision.gameObject.GetComponent<EnemyBehavior>().moving = false;
+
+            yield return new WaitForSeconds(0.3f);
+            Destroy(collision.gameObject);
+            }
+    } 
 }
