@@ -9,7 +9,7 @@ public class HealthBar : MonoBehaviour
     int damage = 10;
     int maxHealth = 100;
     int currentHealth;
-    float[] Dimensions = { 50, 340 };
+    float[] Dimensions = { 66, 380 };
     void Start()
     {
         bar = this.GetComponent<RectTransform>();
