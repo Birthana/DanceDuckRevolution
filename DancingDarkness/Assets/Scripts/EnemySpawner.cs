@@ -26,7 +26,7 @@ public class EnemySpawner : MonoBehaviour
     }
 
     IEnumerator Spawning() {
-        while(counter < 10) {
+        while( counter < 10) {
             position[0] = Random.Range(1, 4) - 2.5f;
             position[1] = SpawnHeight;
             position[2] = 0;
