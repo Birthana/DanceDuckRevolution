@@ -9,7 +9,4 @@ public class PlayScript : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
-
-}
-}
 }
