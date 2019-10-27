@@ -14,11 +14,6 @@ public class EnemyBehavior : MonoBehaviour
         Move();
     }
 
-    void Update()
-    {
-
-    }
-
     public void Move()
     {
         StartCoroutine("EnemyMovement");
