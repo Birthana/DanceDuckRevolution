@@ -11,6 +11,8 @@ public class HealthBar : MonoBehaviour
     int maxHealth = 100;
     int currentHealth;
     float[] Dimensions = { 66, 380 };
+    public AudioSource audioDamage;
+    public AudioSource audioDeath;
     void Start()
     {
         bar = this.GetComponent<RectTransform>();
@@ -22,9 +24,11 @@ public class HealthBar : MonoBehaviour
         currentHealth -= damage;
         float scale = (float)currentHealth /maxHealth;
         bar.sizeDelta = new Vector2(Dimensions[0],scale * Dimensions[1]);
+        audioDamage.Play();
         if (currentHealth == 0)
         {
-            SceneManager.LoadScene(2);
+            audioDeath.Play();
+            SceneManager.LoadScene(3);
         }
     }
     
