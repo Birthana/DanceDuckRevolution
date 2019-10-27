@@ -22,4 +22,11 @@ public class HealthBar : MonoBehaviour
         float scale = (float)currentHealth /maxHealth;
         bar.sizeDelta = new Vector2(Dimensions[0],scale * Dimensions[1]);
     }
+    
+    public void GainHealth()
+    {
+        currentHealth += damage;
+        float scale = (float)currentHealth / maxHealth;
+        bar.sizeDelta = new Vector2(Dimensions[0], scale * Dimensions[1]);
+    }
 }
