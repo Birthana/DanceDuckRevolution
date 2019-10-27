@@ -18,12 +18,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if(transform.position.x == -0.5)
         {
-            if (Input.GetKeyDown(KeyCode.A))
+            if(Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 transform.position = new Vector2(-1.5f, -2.5f);
                 sprite.sprite = ducks[1];
             }
-            else if (Input.GetKeyDown(KeyCode.D))
+            else if(Input.GetKeyDown(KeyCode.RightArrow))
             {
                 transform.position = new Vector2(0.5f, -2.5f);
                 sprite.sprite = ducks[1];
@@ -31,24 +31,24 @@ public class PlayerMovement : MonoBehaviour
         }
         else if(transform.position.x == -1.5)
         {
-            if (Input.GetKeyDown(KeyCode.A))
+            if(Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 transform.position = new Vector2(-1.5f, -2.5f);
             }
-            else if (Input.GetKeyDown(KeyCode.D))
+            else if(Input.GetKeyDown(KeyCode.RightArrow))
             {
                 transform.position = new Vector2(-0.5f, -2.5f);
                 sprite.sprite = ducks[0];
             }
         }
-        else if (transform.position.x == 0.5)
+        else if(transform.position.x == 0.5)
         {
-            if (Input.GetKeyDown(KeyCode.A))
+            if(Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 transform.position = new Vector2(-0.5f, -2.5f);
                 sprite.sprite = ducks[0];
             }
-            else if (Input.GetKeyDown(KeyCode.D))
+            else if(Input.GetKeyDown(KeyCode.RightArrow))
             {
                 transform.position = new Vector2(0.5f, -2.5f);
             }
