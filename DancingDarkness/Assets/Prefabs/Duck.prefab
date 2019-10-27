@@ -111,5 +111,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f94224c4230bc940806d3c5a2468952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  dance:
+  - {fileID: 3050298286803795759, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
+  - {fileID: -674736056058281519, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
+  - {fileID: -3368953627031118685, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
+  - {fileID: 5139781249537194122, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
+  - {fileID: 995683507652777763, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
+  - {fileID: 748963542221421682, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
+  - {fileID: -8415451842214196470, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
+  - {fileID: 1685854417857536512, guid: 3e664109359070d4ea1f4285a89e66db, type: 3}
   projectile: {fileID: 6332805609431186862, guid: f6c8d2a1dc4353d4a81fe561ecd36284,
     type: 3}
+  cooldown: 0
+  attackText: {fileID: 0}
