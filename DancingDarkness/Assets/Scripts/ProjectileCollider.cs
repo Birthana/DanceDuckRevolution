@@ -11,15 +11,15 @@ public class ProjectileCollider: MonoBehaviour {
 
     IEnumerator Death(Collision2D collision)
     {
-            if (collision.collider.tag == "Enemy")
-            {
-                Destroy(this.gameObject);
-                collision.gameObject.GetComponent<Animator>().SetBool("IsDead", true);
-                collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
-                collision.gameObject.GetComponent<EnemyBehavior>().moving = false;
-
+        if (collision.collider.tag == "Enemy")
+        {
+            collision.gameObject.GetComponent<Animator>().SetBool("IsDead", true);
+            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            collision.gameObject.GetComponent<EnemyBehavior>().moving = false;
+            this.GetComponent<SpriteRenderer>().enabled = false;
             yield return new WaitForSeconds(0.3f);
+            Destroy(this.gameObject);
             Destroy(collision.gameObject);
-            }
+        }
     } 
 }
