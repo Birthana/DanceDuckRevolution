@@ -734,6 +734,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862494893}
   m_CullTransparentMesh: 0
+--- !u!1 &921928749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9110045730677694611, guid: e19c570eeb5d34d4e87d03189809529f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1093882314}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &921928754
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921928749}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8aeb76c3546d18047b1446353bba23da, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &934763861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,6 +1167,12 @@ PrefabInstance:
       propertyPath: audioMove
       value: 
       objectReference: {fileID: 969662845}
+    - target: {fileID: 5184031166277345204, guid: e19c570eeb5d34d4e87d03189809529f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6080852321328123255, guid: 3e664109359070d4ea1f4285a89e66db,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e19c570eeb5d34d4e87d03189809529f, type: 3}
 --- !u!1 &1126397930

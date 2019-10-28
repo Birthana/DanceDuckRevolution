@@ -37,8 +37,8 @@ public class HealthBar : MonoBehaviour
         if (currentHealth < 100)
         {
             currentHealth += damage;
+            float scale = (float)currentHealth / maxHealth;
+            bar.sizeDelta = new Vector2(Dimensions[0], scale * Dimensions[1]);
         }
-        float scale = (float)currentHealth / maxHealth;
-        bar.sizeDelta = new Vector2(Dimensions[0], scale * Dimensions[1]);
     }
 }
